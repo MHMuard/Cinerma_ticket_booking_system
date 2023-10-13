@@ -63,7 +63,7 @@ class Hall(Star_Cinema):
 def book_seats_interactively(hall):
     try:
         show_id = int(input("Enter the show ID to book seats: available show ID '111' or '222':  "))
-        if show_id not in hall.seats:
+        if show_id not in hall._seats:
             print("Invalid show ID.")
             return
 
